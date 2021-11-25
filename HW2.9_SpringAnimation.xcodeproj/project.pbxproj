@@ -8,10 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		04A47A0F9FB20BF1730BB3DA /* Pods_HW2_9_SpringAnimation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 128537F2447A48E64CE6F905 /* Pods_HW2_9_SpringAnimation.framework */; };
-		C2449397274D848600135C50 /* RandomAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2449396274D848600135C50 /* RandomAnimation.swift */; };
+		C2449397274D848600135C50 /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2449396274D848600135C50 /* Animation.swift */; };
+		C244939A274E541F00135C50 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2449399274E541F00135C50 /* DataManager.swift */; };
 		C2EED927274D7B2100E86A1D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2EED926274D7B2100E86A1D /* AppDelegate.swift */; };
 		C2EED929274D7B2100E86A1D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2EED928274D7B2100E86A1D /* SceneDelegate.swift */; };
-		C2EED92B274D7B2100E86A1D /* AnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2EED92A274D7B2100E86A1D /* AnimationController.swift */; };
+		C2EED92B274D7B2100E86A1D /* AnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2EED92A274D7B2100E86A1D /* AnimationViewController.swift */; };
 		C2EED92E274D7B2100E86A1D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2EED92C274D7B2100E86A1D /* Main.storyboard */; };
 		C2EED930274D7B2200E86A1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2EED92F274D7B2200E86A1D /* Assets.xcassets */; };
 		C2EED933274D7B2200E86A1D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2EED931274D7B2200E86A1D /* LaunchScreen.storyboard */; };
@@ -21,11 +22,12 @@
 		128537F2447A48E64CE6F905 /* Pods_HW2_9_SpringAnimation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HW2_9_SpringAnimation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		35AAA9073A2D2DBD28DECEE4 /* Pods-HW2.9_SpringAnimation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HW2.9_SpringAnimation.release.xcconfig"; path = "Target Support Files/Pods-HW2.9_SpringAnimation/Pods-HW2.9_SpringAnimation.release.xcconfig"; sourceTree = "<group>"; };
 		3F1474E5D99DBAFF461AFE20 /* Pods-HW2.9_SpringAnimation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HW2.9_SpringAnimation.debug.xcconfig"; path = "Target Support Files/Pods-HW2.9_SpringAnimation/Pods-HW2.9_SpringAnimation.debug.xcconfig"; sourceTree = "<group>"; };
-		C2449396274D848600135C50 /* RandomAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomAnimation.swift; sourceTree = "<group>"; };
+		C2449396274D848600135C50 /* Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animation.swift; sourceTree = "<group>"; };
+		C2449399274E541F00135C50 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		C2EED923274D7B2100E86A1D /* HW2.9_SpringAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HW2.9_SpringAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2EED926274D7B2100E86A1D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C2EED928274D7B2100E86A1D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C2EED92A274D7B2100E86A1D /* AnimationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationController.swift; sourceTree = "<group>"; };
+		C2EED92A274D7B2100E86A1D /* AnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationViewController.swift; sourceTree = "<group>"; };
 		C2EED92D274D7B2100E86A1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C2EED92F274D7B2200E86A1D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C2EED932274D7B2200E86A1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -64,7 +66,7 @@
 		C2449392274D7F4200135C50 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				C2449396274D848600135C50 /* RandomAnimation.swift */,
+				C2449396274D848600135C50 /* Animation.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -78,12 +80,12 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		C2449394274D7F5100135C50 /* Controllers */ = {
+		C2449394274D7F5100135C50 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				C2EED92A274D7B2100E86A1D /* AnimationController.swift */,
+				C2EED92A274D7B2100E86A1D /* AnimationViewController.swift */,
 			);
-			path = Controllers;
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 		C2449395274D7F6800135C50 /* Configs */ = {
@@ -93,6 +95,14 @@
 				C2EED928274D7B2100E86A1D /* SceneDelegate.swift */,
 			);
 			path = Configs;
+			sourceTree = "<group>";
+		};
+		C2449398274E540C00135C50 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				C2449399274E541F00135C50 /* DataManager.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 		C2EED91A274D7B2100E86A1D = {
@@ -119,7 +129,8 @@
 				C2449395274D7F6800135C50 /* Configs */,
 				C2449392274D7F4200135C50 /* Models */,
 				C2449393274D7F4A00135C50 /* Views */,
-				C2449394274D7F5100135C50 /* Controllers */,
+				C2449398274E540C00135C50 /* Service */,
+				C2449394274D7F5100135C50 /* ViewControllers */,
 				C2EED92F274D7B2200E86A1D /* Assets.xcassets */,
 				C2EED934274D7B2200E86A1D /* Info.plist */,
 			);
@@ -241,8 +252,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C2EED92B274D7B2100E86A1D /* AnimationController.swift in Sources */,
-				C2449397274D848600135C50 /* RandomAnimation.swift in Sources */,
+				C2EED92B274D7B2100E86A1D /* AnimationViewController.swift in Sources */,
+				C244939A274E541F00135C50 /* DataManager.swift in Sources */,
+				C2449397274D848600135C50 /* Animation.swift in Sources */,
 				C2EED927274D7B2100E86A1D /* AppDelegate.swift in Sources */,
 				C2EED929274D7B2100E86A1D /* SceneDelegate.swift in Sources */,
 			);

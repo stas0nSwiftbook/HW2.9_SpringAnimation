@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Animation Controller-->
+        <!--Animation View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="AnimationController" customModule="HW2_9_SpringAnimation" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="AnimationViewController" customModule="HW2_9_SpringAnimation" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -24,7 +24,7 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pIs-Ef-7ha">
-                                <rect key="frame" x="127.5" y="746.5" width="159" height="37"/>
+                                <rect key="frame" x="114.5" y="741.5" width="185.5" height="42"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Button">
                                     <attributedString key="attributedTitle">
@@ -40,7 +40,8 @@
                                     <attributedString key="attributedTitle">
                                         <fragment content="Start animation">
                                             <attributes>
-                                                <font key="NSFont" size="20" name="Helvetica"/>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                <font key="NSFont" size="24" name="Helvetica"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                             </attributes>
                                         </fragment>
@@ -50,62 +51,28 @@
                                     <action selector="startAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UR3-ps-dcq"/>
                                 </connections>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="LEo-Bf-E8u">
-                                <rect key="frame" x="20" y="84" width="374" height="122.5"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="present:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qGc-Nq-WS1">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="curve:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nZR-0j-5b2">
-                                        <rect key="frame" x="0.0" y="25.5" width="374" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="force:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xk3-Zx-crg">
-                                        <rect key="frame" x="0.0" y="51" width="374" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="duration:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YdP-JZ-Wzv">
-                                        <rect key="frame" x="0.0" y="76.5" width="374" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="delay:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="18v-Ag-SI9">
-                                        <rect key="frame" x="0.0" y="102" width="374" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uz7-Yo-5Nm">
+                                <rect key="frame" x="20" y="64" width="374" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="pIs-Ef-7ha" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="7Xy-RD-hIX"/>
                             <constraint firstItem="jDk-tK-twH" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="Edm-eU-1Fq"/>
+                            <constraint firstItem="uz7-Yo-5Nm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="JZs-NI-quX"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="pIs-Ef-7ha" secondAttribute="bottom" multiplier="1.1" id="KGA-Pq-buI"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LEo-Bf-E8u" secondAttribute="trailing" constant="20" id="MF1-w6-0mb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uz7-Yo-5Nm" secondAttribute="trailing" constant="20" id="MYx-ur-h94"/>
+                            <constraint firstItem="uz7-Yo-5Nm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="kJj-Lj-tK9"/>
                             <constraint firstItem="jDk-tK-twH" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="shK-Xm-J4D"/>
-                            <constraint firstItem="LEo-Bf-E8u" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="t9s-f9-RYi"/>
-                            <constraint firstItem="LEo-Bf-E8u" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="zwv-QT-8nY"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="curveLabel" destination="nZR-0j-5b2" id="QPd-qu-Ck3"/>
-                        <outlet property="delayLabel" destination="18v-Ag-SI9" id="1KA-tJ-R7I"/>
-                        <outlet property="durationLabel" destination="YdP-JZ-Wzv" id="XhW-rH-7W1"/>
-                        <outlet property="forceLabel" destination="Xk3-Zx-crg" id="NTm-IO-v5E"/>
-                        <outlet property="presentLabel" destination="qGc-Nq-WS1" id="QhM-yJ-JVd"/>
+                        <outlet property="animationLabel" destination="uz7-Yo-5Nm" id="vCg-hR-jqO"/>
                         <outlet property="springImageView" destination="jDk-tK-twH" id="WFV-hW-dJV"/>
-                        <outlet property="startAnimationButton" destination="pIs-Ef-7ha" id="yDA-tU-ug4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
